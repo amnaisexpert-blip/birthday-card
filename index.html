@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Baba Jan</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- YAHAN YE NEW SCRIPT ADD KI HAI FIREWORKS/PATAKHY KE LIYE -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <div class="container">
+        
+        <!-- Section 1: Birthday Greeting -->
+        <div class="section active" id="sec-1">
+            <div class="cake-icon">🎂</div>
+            <h1>Happy Birthday</h1>
+            <h2 style="font-size: 22px; color: #f472b6; margin-bottom: 5px;">Baba Jan </h2>
+            <p class="subtitle">It's your special day!</p>
+            <div style="font-size: 50px; margin: 20px 0;">🎁</div>
+            <button class="btn" onclick="nextSection(2)">See Our Memories <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Section 2: Memories We Made -->
+        <div class="section" id="sec-2">
+            <h1>Moments with You</h1>
+            <p class="subtitle">The best guidance and support of my life</p>
+            
+            <div class="card-grid">
+                <div class="memory-card">
+                    <h3><i class="fa-solid fa-star"></i> First Guidance</h3>
+                    <p>Your advice always showed me the right path whenever I felt confused or stuck in life.</p>
+                </div>
+                <div class="memory-card">
+                    <h3><i class="fa-solid fa-shield-halved"></i> Constant Support</h3>
+                    <p>Through every hard time and challenge, your strong support gave me the courage to succeed.</p>
+                </div>
+                <div class="memory-card">
+                    <h3><i class="fa-solid fa-mug-hot"></i> Valuable Lessons</h3>
+                    <p>Every conversation with you taught me invaluable lessons about hard work, honesty, and patience.</p>
+                </div>
+            </div>
+
+            <button class="btn" onclick="nextSection(3)">See Photo Frame <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Section 3: Photo Frame -->
+        <div class="section" id="sec-3">
+            <h1>A Special Memory</h1>
+            <p class="subtitle">Beautiful moments with Baba Jan</p>
+            
+            <img src="./image.png" alt="My Image">
+            <!-- <div class="photo-frame-box">
+                <i class="fa-solid fa-image" style="font-size: 40px; color: rgba(255,255,255,0.4);"></i>
+            </div> -->
+
+            <button class="btn" onclick="nextSection(4)">Read Special Letter <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Section 4: Special Letter -->
+        <div class="section" id="sec-4">
+            <h1>A Special Letter</h1>
+            <p class="subtitle">Just for you, on your special day 🤍</p>
+
+            <div class="letter-box">
+                <div class="heart">❤️</div>
+                <p><b>My Dearest Baba Jan,</b></p><br>
+                <p>On this very special day, I want you to know how incredibly grateful I am to have you in my life. Your birthday isn't just a celebration of another year — it is a celebration of all the wisdom, love, and endless sacrifices you bring to our family.</p><br>
+                <p>You have this amazing ability to guide everyone around you, to make people smile even on their hardest days, and to spread kindness wherever you go. Your heart is pure gold, and your strength is truly inspiring.</p><br>
+                <p>Thank you for being the wonderful, caring, and absolute best father. The world is much brighter because you're in it.</p><br>
+                <p style="text-align: center; color: #f472b6; font-weight: 600;">Happy Birthday, Baba Jan!<br>With all my love and deepest respect.</p>
+            </div>
+
+            <button class="btn" onclick="nextSection(1)"><i class="fa-solid fa-rotate-right"></i> Restart</button>
+        </div>
+
+        <!-- Floating Balloons Footer -->
+        <div class="balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
